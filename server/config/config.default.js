@@ -9,7 +9,7 @@ const config = {
     },
   },
   Proj: {
-    code: 'MsvAll', //项目代号,如广西环监:gxhj,遵义lims：zylims
+    code: 'project', //项目代号,如广西环监:gxhj,遵义lims：zylims
     title: '机动车排气污染防治信息监管平台', //项目标题,可用来显示各处项目标题，比如浏览器标题栏
     authToken: '', //项目授权码
     defaultPCLayout: 'pc2', //默认PC布局
@@ -20,18 +20,19 @@ const config = {
     isCryptoLoginPWD: false, //是否对登录密码加密
     isTitle: false, // 是否更改标题的开关
   },
-  sequelize: {
-    datasources: [
-      {
-        dialect: 'mysql',
-        database: 'project',
-        host: '127.0.0.1',
-        username: 'root',
-        password: '123456',
-        timezone: '+08:00',
-        port: 3306,
-      },
-    ],
+  mysql: {
+    client: {
+      // host
+      host: '127.0.0.1',
+      // 端口号
+      port: '3306',
+      // 用户名
+      user: 'root',
+      // 密码
+      password: '123456',
+      // 数据库名
+      database: 'project',
+    },
   },
   redis: {
     clients: {
