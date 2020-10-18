@@ -175,11 +175,10 @@ export default {
       this.error = null
       let _form = Object.assign({}, this.form)
       this.$curl
-        .get('/api/public/core/checkNet')
-        .then((res) => this.$curl.post('/api/public/core/login', _form))
+        .post('/api/public/login', _form)
         .then((res) => {
-          window.console.log(res)
-          if (res.msg) {
+          const { data } = res
+          if (!data.res.length) {
             this.error = res.msg
             this.islogining = false
           } else {
@@ -201,11 +200,11 @@ export default {
               JSON.stringify(userArr)
             )
             let params = {
-              action: '/api/public/core/login',
+              action: '/api/public/login',
               ipAddress: currentIP,
             }
             this.$curl
-              .post('api/hj/writeloginLog', { params })
+              .post('api/public/writeloginLog', { params })
               .then((res) => {})
             location.href = 'index.html'
           }
@@ -542,7 +541,7 @@ input[type='checkbox']:checked {
 
 .login .ivu-auto-complete.ivu-select-dropdown::-webkit-scrollbar-thumb {
   background-color: #d9d9d9;
-  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 
 @media screen and (max-width: 768px) {
