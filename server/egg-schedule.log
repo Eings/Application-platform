@@ -1,0 +1,15 @@
+2020-10-18 14:21:02,865 INFO 5928 [egg-schedule]: register schedule D:\Project\Application-platform\server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-18 14:21:02,865 INFO 5928 [egg-schedule]: register schedule D:\Project\Application-platform\server\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-10-18 14:21:02,865 INFO 5928 [egg-schedule]: register schedule D:\Project\Application-platform\server\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-18 14:30:49,279 INFO 15964 [egg-schedule]: register schedule D:\Project\Application-platform\server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-18 14:30:49,279 INFO 15964 [egg-schedule]: register schedule D:\Project\Application-platform\server\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-10-18 14:30:49,279 INFO 15964 [egg-schedule]: register schedule D:\Project\Application-platform\server\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-18 14:30:50,538 INFO 8524 [Timer] D:\Project\Application-platform\server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 50349469ms at 2020-10-19 04:30:00.007
+2020-10-18 14:30:50,539 INFO 8524 [Timer] D:\Project\Application-platform\server\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 34149462ms at 2020-10-19 00:00:00.001
+2020-10-18 14:30:50,540 INFO 8524 [Timer] D:\Project\Application-platform\server\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 34150461ms at 2020-10-19 00:00:01.000
+2020-10-18 14:31:00,710 INFO 12744 [egg-schedule]: register schedule D:\Project\Application-platform\server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-18 14:31:00,710 INFO 12744 [egg-schedule]: register schedule D:\Project\Application-platform\server\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-10-18 14:31:00,710 INFO 12744 [egg-schedule]: register schedule D:\Project\Application-platform\server\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-10-18 14:31:04,208 INFO 5220 [egg-schedule]: register schedule D:\Project\Application-platform\server\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-10-18 14:31:04,208 INFO 5220 [egg-schedule]: register schedule D:\Project\Application-platform\server\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-10-18 14:31:04,208 INFO 5220 [egg-schedule]: register schedule D:\Project\Application-platform\server\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
