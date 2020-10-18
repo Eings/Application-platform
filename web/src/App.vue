@@ -1,12 +1,36 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <div id="nav"></div>
+    <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  //数据区
+  data() {
+    return {}
+  },
+  //方法区
+  methods: {
+    async send() {
+      let { data } = await this.$curl.get('/api/getList')
+      console.log('res', data)
+    },
+  },
+  //计算属性区
+  computed: {},
+  //父传子接收区
+  props: [],
+  //生命周期区
+  created() {},
+  mounted() {
+    this.send()
+  },
+  //组件区
+  components: {},
+}
+</script>
 
 <style lang="less">
 #app {

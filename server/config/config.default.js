@@ -1,11 +1,11 @@
 'use strict'
 const path = require('path')
 const config = {
-  // keys:"1552708589620_hj",
+  keys: '1552708589620_hj',
   cluster: {
     listen: {
       port: 7001,
-      hostname: '0.0.0.0',
+      hostname: '127.0.0.1',
     },
   },
   Proj: {
@@ -43,6 +43,15 @@ const config = {
         keyPrefix: 'hj/',
       },
     },
+  },
+}
+config.cors = {
+  origin: '*', // 表示允许的源
+  allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH', // 表示允许的http请求方式
+}
+config.security = {
+  csrf: {
+    enable: false,
   },
 }
 
