@@ -1,5 +1,5 @@
 <template>
-  <div class="common-pc-login-layout login">
+  <div class="common-pc-login-layout" id="login">
     <form class="common-pc-login-container" autocomplete="off">
       <div class="user">
         <img :src="userimg" @error="onError($event)" />
@@ -87,8 +87,8 @@
 </template>
 
 <script>
-import userface from '../../assets/img/userface.jpg'
-import bgLogin from '../../assets/img/bg-login-2x.png'
+import userface from '../assets/img/userface.jpg'
+import bgLogin from '../assets/img/bg-login-2x.png'
 
 // import axios from 'axios'
 // import { curl } from '@skyland/fxlogin'
@@ -300,7 +300,7 @@ html {
 }
 
 body {
-  background: url('../../assets/img/bg-login@2x.png') 0 / cover fixed;
+  background: url('../assets/img/bg-login@2x.png') 0 / cover fixed;
   background-position: center;
   overflow-x: hidden;
 }
@@ -449,11 +449,11 @@ body {
   font-size: 24px;
 }
 .username-bg {
-  background: url('../../assets/img/username-2x.png') no-repeat center;
+  background: url('../assets/img/username-2x.png') no-repeat center;
 }
 
 .psd-bg {
-  background: url('../../assets/img/psd-2x.png') no-repeat center;
+  background: url('../assets/img/psd-2x.png') no-repeat center;
 }
 
 .form-check {
@@ -521,7 +521,7 @@ input[type='checkbox'] {
 }
 
 input[type='checkbox']:checked {
-  background: url('../../assets/img/checked-2x.png') no-repeat center;
+  background: url('../assets/img/checked-2x.png') no-repeat center;
   background-color: #3686ff;
 }
 
@@ -579,7 +579,7 @@ input[type='checkbox']:checked {
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: -1;
-    background-image: url(../../assets/img/bg-login@2x.png);
+    background-image: url(../assets/img/bg-login@2x.png);
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
